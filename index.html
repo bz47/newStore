@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Shoe Store</title>
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+  </head>
+
+  <body>
+    <!----Nav---->
+    <nav>
+      <div class="logo">||| SOLE |||</div>
+      <div id="nav">
+        <span id="menu-btn">Menu</span>
+        <span id="login-btn">Login</span>
+      </div>
+    </nav>
+    <!---Menu--->
+    <div id="hide-menu">
+      <div class="menu-container">
+        <ul>
+          <h3>Shoes</h3>
+          <li>Nike</li>
+          <li>Reebok</li>
+          <li>Addidas</li>
+          <li>Crocs</li>
+          <li>Jimmy Chu's</li>
+        </ul>
+        <ul>
+          <h3>Contact</h3>
+          <li>Facebook</li>
+          <li>Instagram</li>
+          <li>Twitter</li>
+          <li>Email</li>
+          <li>X</li>
+        </ul>
+      </div>
+    </div>
+    <!----Login---->
+    <div id="hide-login">
+      <div class="login-container">
+        <form action="">
+          <label for="username">Username</label>
+          <input type="text" />
+          <label for="password">Password</label>
+          <input type="text" />
+          <button id="submit" type="submit">SUBMIT</button>
+        </form>
+      </div>
+    </div>
+    <!---Main---->
+    <main>
+      <div class="card">
+        <div class="card-image">
+          <img src="./red.jpg" alt="" />
+        </div>
+        <div class="card-bottom">
+          <div class="shoe-info">
+            <div>RED FLYER</div>
+            <div>$150</div>
+          </div>
+          <button id="red-btn" class="show-shoe-info">></button>
+        </div>
+        <div id="red-details" class="extra-details">
+          <p>
+            The ultimate in style and comfort, the Red Flyer's are great for
+            walking and casual wearing.
+          </p>
+
+          <h3>Size</h3>
+          <div class="grid">
+            <p class="size">7</p>
+            <p class="size">8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="./running.jpg" alt="" />
+        </div>
+        <div class="card-bottom">
+          <div class="shoe-info">
+            <div>RAMPANT RUNNERS</div>
+            <div>$80</div>
+          </div>
+          <button id="run-btn" class="show-shoe-info">></button>
+        </div>
+        <div id="run-details" class="extra-details">
+          <p>
+            On the run? Don't fall behind! Grab these Rampant Runners and rage
+            on!
+          </p>
+
+          <h3>Size</h3>
+          <div class="grid">
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-image">
+          <img src="./swiss.jpg" alt="" />
+        </div>
+        <div class="card-bottom">
+          <div class="shoe-info">
+            <div>SWISS KICKS</div>
+            <div>$120</div>
+          </div>
+          <button id="swiss-btn" class="show-shoe-info">></button>
+        </div>
+        <div id="swiss-details" class="extra-details">
+          <p>
+            Ready to kick it G style? Swiss Kicks are great for everything from
+            B-boy Bananzas to YouKnow Yolo!
+          </p>
+
+          <h3>Size</h3>
+          <div class="grid">
+            <p>7</p>
+            <p>8</p>
+            <p>9</p>
+            <p>10</p>
+            <p>11</p>
+          </div>
+          <button class="add-to-cart">Add To Cart</button>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>

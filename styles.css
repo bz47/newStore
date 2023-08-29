@@ -1,0 +1,242 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  margin-left: 25%;
+  margin-top: 0px;
+  font-family: "Roboto Condensed", Helvetica, sans-serif;
+}
+
+nav {
+  width: 100%;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: 5%;
+  background-color: #303030;
+}
+
+.logo {
+  color: #d0fd51;
+}
+
+#nav span {
+  padding: 0.92rem;
+  color: #efefef;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#nav span:hover {
+  background-color: #535353;
+  cursor: pointer;
+}
+
+.menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #535353;
+  color: #d0fd51;
+  padding-bottom: 1em;
+}
+
+.menu-container ul {
+  margin-inline: 5%;
+}
+
+li {
+  list-style: none;
+  padding-block: 3%;
+  color: #efefef;
+}
+
+ul li:hover {
+  font-size: large;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+#hide-menu {
+  display: flex;
+  display: none;
+  justify-content: center;
+}
+
+.login-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #535353;
+  color: #efefef;
+  padding-block: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding-right: 5%;
+  text-transform: uppercase;
+}
+
+input {
+  margin-block: 0.5em;
+  width: 150%;
+  cursor: pointer;
+}
+
+#hide-login {
+  display: flex;
+  display: none;
+  justify-content: center;
+}
+
+#submit {
+  position: relative;
+  left: 20%;
+  margin: 0.5em;
+  padding: 0.5em;
+  color: #d0fd51;
+  background-color: #363535;
+}
+
+#submit:hover {
+  background-color: rgb(54, 53, 53, 0.7);
+  cursor: pointer;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.card {
+  border: solid black 2px;
+  width: 50%;
+  margin-block: 1em;
+}
+
+.card-image {
+  width: 100%;
+}
+
+img {
+  display: block;
+  height: auto;
+  max-height: 230px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-bottom {
+  width: 100%;
+  height: 3em;
+  display: flex;
+  justify-content: space-between;
+}
+
+.shoe-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 3%;
+  background-color: #dad7d7;
+}
+
+.card-bottom button {
+  padding-inline: 4%;
+  background-color: #363535;
+  color: #d0fd51;
+  font-size: larger;
+  border: none;
+}
+
+.card-bottom button:hover {
+  background-color: rgb(54, 53, 53, 0.4);
+  cursor: pointer;
+}
+
+.extra-details {
+  width: 100%;
+  text-align: justify;
+  background-color: #535353;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+
+.extra-details h3 {
+  padding-inline: 4%;
+  color: #efefef;
+}
+
+.extra-details p {
+  margin-top: 0px;
+  padding-top: 1em;
+  padding-inline: 4%;
+  color: #efefef;
+}
+
+.grid {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 2%;
+  padding-inline: 4%;
+}
+
+.grid p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2b2a2a;
+  color: #efefef;
+  width: 100%;
+  padding-bottom: 1em;
+}
+
+.grid p:hover {
+  background-color: rgb(43, 42, 42, 0.7);
+  cursor: pointer;
+}
+
+.add-to-cart {
+  width: 100%;
+  padding: 3%;
+  margin-top: 1em;
+  border: none;
+  color: rgb(83, 83, 83, 0.8);
+  background-color: #2b2a2a;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 700;
+}
+
+.add-to-cart:hover {
+  color: #efefef;
+  background-color: rgb(43, 42, 42, 0.7);
+  cursor: pointer;
+}
+
+.active {
+  color: red;
+}
+
+@media only screen and (max-width: 900px) {
+  body {
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .card {
+    min-width: 320px;
+  }
+}
