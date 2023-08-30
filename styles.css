@@ -227,7 +227,7 @@ img {
 }
 
 .active {
-  color: red;
+  color: #d0fd51 !important;
 }
 
 @media only screen and (max-width: 900px) {

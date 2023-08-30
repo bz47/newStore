@@ -29,4 +29,11 @@ $(document).ready(() => {
   $swissButton.on("click", () => {
     $swissDetails.toggle();
   });
+
+  $("p").on("click", function (e) {
+    // Any <p> that has the clicked CSS, remove it:
+    $("p.active").removeClass("active");
+    // Then apply the CSS to the clicked element
+    $(this).addClass("active");
+  });
 });
