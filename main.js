@@ -25,7 +25,6 @@ $(document).ready(() => {
   $runButton.on("click", () => {
     $runDetails.toggle();
   });
-
   $swissButton.on("click", () => {
     $swissDetails.toggle();
   });
